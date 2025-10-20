@@ -1,0 +1,16 @@
+.revenue-chart {
+  width: 100%;
+  min-height: 350px;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+.recharts-default-tooltip {
+  border-radius: 8px !important;
+}
+
+.recharts-legend-wrapper {
+  padding-top: 20px;
+}
