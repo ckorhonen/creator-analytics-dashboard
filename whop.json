@@ -1,0 +1,41 @@
+{
+  "name": "Creator Analytics Dashboard",
+  "description": "A beautifully simple analytics dashboard that aggregates data from Patreon, YouTube, Twitch, and other creator platforms into one clear view.",
+  "version": "1.0.0",
+  "icon": "https://your-domain.com/icon.png",
+  "homepage": "https://your-domain.com",
+  "author": {
+    "name": "Chris Korhonen",
+    "email": "ckorhonen@gmail.com"
+  },
+  "permissions": [
+    "user:read",
+    "company:read"
+  ],
+  "webhooks": {
+    "order.created": "https://your-worker.workers.dev/webhooks/order-created",
+    "order.updated": "https://your-worker.workers.dev/webhooks/order-updated",
+    "subscription.created": "https://your-worker.workers.dev/webhooks/subscription-created",
+    "subscription.cancelled": "https://your-worker.workers.dev/webhooks/subscription-cancelled"
+  },
+  "settings": [
+    {
+      "key": "youtube_channel_id",
+      "label": "YouTube Channel ID",
+      "type": "text",
+      "required": false
+    },
+    {
+      "key": "patreon_campaign_id",
+      "label": "Patreon Campaign ID",
+      "type": "text",
+      "required": false
+    },
+    {
+      "key": "twitch_username",
+      "label": "Twitch Username",
+      "type": "text",
+      "required": false
+    }
+  ]
+}
