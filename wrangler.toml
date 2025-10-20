@@ -1,0 +1,18 @@
+name = "creator-analytics-dashboard"
+main = "dist/worker.js"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "./dist"
+
+# Environment variables (add your API keys here)
+[vars]
+ENVIRONMENT = "production"
+
+# Secrets to add via: wrangler secret put <KEY_NAME>
+# - YOUTUBE_API_KEY
+# - PATREON_CLIENT_ID
+# - PATREON_CLIENT_SECRET
+# - TWITCH_CLIENT_ID
+# - TWITCH_CLIENT_SECRET
+# - WHOP_API_KEY
